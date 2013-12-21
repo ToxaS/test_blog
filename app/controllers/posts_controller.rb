@@ -34,7 +34,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post.destroy
+    @post.destroy    # TODO: check if destroy was good
     redirect_to posts_url
   end
 

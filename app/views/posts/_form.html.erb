@@ -27,6 +27,7 @@
   </div>  
   
   <div class="select">
+    <%- # TODO: fields_for  -%>
     <%= select_tag 'post[tag_ids][]', options_for_select( Tag.all.collect{ |tag| [tag.name, tag.id] }, @post.tags.collect{ |tag| tag.id } ), multiple: true %>
   </div>
   
